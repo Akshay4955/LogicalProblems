@@ -22,4 +22,25 @@ public class LogicalProblem
         }
         return fibonacci;
     }
+
+    public void PerfectNumber(int inputNumber)
+    {
+        int divisorsSum = 0;
+        for (int i = 1; i <= inputNumber / 2; i++)
+        {
+            if (inputNumber % i == 0)
+            {
+                divisorsSum += i;
+            }
+        }
+        if (divisorsSum == inputNumber)
+        {
+            Console.WriteLine(inputNumber + " is a perfect number");
+        }
+        else
+        {
+            Console.WriteLine(inputNumber + " is not a perfect number");
+        }
+
+    }
 }
