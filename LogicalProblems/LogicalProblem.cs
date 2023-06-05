@@ -41,6 +41,27 @@ public class LogicalProblem
         {
             Console.WriteLine(inputNumber + " is not a perfect number");
         }
+    }
 
+    public void PrimeNumber(int inputNumber)
+    {
+        bool status = true;
+        for (int i = 2; i <= inputNumber / 2; i++)
+        {
+            if (inputNumber % i == 0)
+            {
+                status = false;
+                break;
+            }
+
+        }
+        if (status == true)
+        {
+            Console.WriteLine(inputNumber + " is a prime number");
+        }
+        else
+        {
+            Console.WriteLine(inputNumber + " is not a prime number");
+        }
     }
 }
