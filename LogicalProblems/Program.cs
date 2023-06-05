@@ -13,12 +13,16 @@ internal class Program
 
         Console.WriteLine("Please enter number to find Perfect or not");
         int inputPerfectNumber = Convert.ToInt32(Console.ReadLine());
-        logicalProblem.PerfectNumber(inputPerfectNumber);
+        logicalProblem.CheckPerfectNumber(inputPerfectNumber);
         Console.WriteLine();
 
         Console.WriteLine("Please enter number to check for prime number");
         int inputPrimeNumber = Convert.ToInt32(Console.ReadLine());
-        logicalProblem.PrimeNumber(inputPrimeNumber);
+        logicalProblem.CheckPrimeNumber(inputPrimeNumber);
         Console.WriteLine();
+
+        Console.WriteLine("Please enter number to get reverse number");
+        int inputReverseNumber = Convert.ToInt32(Console.ReadLine());
+        logicalProblem.GetReverseNmber(inputReverseNumber);
     }
 }

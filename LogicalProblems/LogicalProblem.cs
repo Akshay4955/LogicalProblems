@@ -23,7 +23,7 @@ public class LogicalProblem
         return fibonacci;
     }
 
-    public void PerfectNumber(int inputNumber)
+    public void CheckPerfectNumber(int inputNumber)
     {
         int divisorsSum = 0;
         for (int i = 1; i <= inputNumber / 2; i++)
@@ -43,7 +43,7 @@ public class LogicalProblem
         }
     }
 
-    public void PrimeNumber(int inputNumber)
+    public void CheckPrimeNumber(int inputNumber)
     {
         bool status = true;
         for (int i = 2; i <= inputNumber / 2; i++)
@@ -63,5 +63,17 @@ public class LogicalProblem
         {
             Console.WriteLine(inputNumber + " is not a prime number");
         }
+    }
+
+    public void GetReverseNmber(int inputNumber)
+    {
+        int reverseNumber = 0;
+        while (inputNumber != 0)
+        {
+            int remainder = inputNumber % 10;
+            reverseNumber = reverseNumber * 10 + remainder;
+            inputNumber = inputNumber / 10;
+        }
+        Console.WriteLine("Reverse number is " + reverseNumber);
     }
 }
