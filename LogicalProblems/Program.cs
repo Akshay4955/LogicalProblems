@@ -23,6 +23,6 @@ internal class Program
 
         Console.WriteLine("Please enter number to get reverse number");
         int inputReverseNumber = Convert.ToInt32(Console.ReadLine());
-        logicalProblem.GetReverseNmber(inputReverseNumber);
+        logicalProblem.GetReverseNumber(inputReverseNumber);
     }
 }
